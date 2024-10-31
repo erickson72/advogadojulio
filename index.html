@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Júlio António Mendonça & Associados</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-3.7.1"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Júlio António Mendonça & Associados</h1>
+      <nav>
+        <ul>
+          <li><a href="#consultoria">Consultoria Jurídica</a></li>
+          <li><a href="#litigios">Defesa e Assessoria em Litígios</a></li>
+          <li><a href="#empresarial">Direito Empresarial</a></li>
+          <li><a href="#civil">Direito Civil e Trabalhista</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="index.html">Sair</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="consultoria">
+        <h2>Consultoria Jurídica</h2>
+        <p>
+          Prestamos consultoria jurídica especializada em diversas áreas do
+          direito, auxiliando nossos clientes com soluções personalizadas.
+        </p>
+        <button onclick="abrirPortal('consultoria')">
+          Entrar no Portal da Consultoria
+        </button>
+      </section>
+
+      <!-- Defesa e Assessoria em Litígios -->
+      <section id="litigios">
+        <h2>Defesa e Assessoria em Litígios</h2>
+        <p>
+          Defendemos os interesses de nossos clientes em litígios e processos
+          judiciais com ampla experiência e dedicação.
+        </p>
+        <button onclick="abrirPortal('defesa e assessoria')">
+          Entrar no Portal da Assessoria
+        </button>
+      </section>
+
+      <!-- Direito Empresarial -->
+      <section id="empresarial">
+        <h2>Direito Empresarial</h2>
+        <p>
+          Nossa equipe oferece assessoria jurídica para empresas em questões
+          contratuais, societárias e trabalhistas.
+        </p>
+        <button onclick="abrirPortal('direito empresarial')">
+          Entrar no Portal Empresarial
+        </button>
+      </section>
+
+      <!-- Direito Civil e Trabalhista -->
+      <section id="civil">
+        <h2>Direito Civil e Trabalhista</h2>
+        <p>
+          Atuamos em casos de direito civil e trabalhista, buscando sempre
+          garantir os direitos de nossos clientes.
+        </p>
+        <button onclick="abrirPortal('direito civil e empresarial')">
+          Entrar no Portal Civil e Trabalhista
+        </button>
+      </section>
+
+      <!-- Contato -->
+      <section id="contato">
+        <h2>Contato</h2>
+        <form id="form-contato">
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationDefault01">Primeiro nome</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault01"
+                placeholder="Nome"
+                value="Júlio"
+                required
+              />
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationDefault02">Sobrenome</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault02"
+                placeholder="Sobrenome"
+                value="Mendonça"
+                required
+              />
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationDefaultUsername">E-mail</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupPrepend2"
+                    >@</span
+                  >
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationDefaultUsername"
+                  placeholder="E-mail"
+                  aria-describedby="inputGroupPrepend2"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+
+          <div class="form-group">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="invalidCheck2"
+                required
+              />
+              <label class="form-check-label" for="invalidCheck2">
+                Concordo com os termos e condições
+              </label>
+            </div>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>Advogado nº 110, NIF: 110114388</p>
+      <p>
+        Telefone: 245 955 969 399 | E-mail:
+        <a href="mailto:juamend4@gmail.com">juamend4@gmail.com</a>
+      </p>
+      <p>Endereço: Av. Osvaldo Vieira Nº13, CP-98, UNTG-CS-Bissau</p>
+      <p>© 2024 Júlio António Mendonça & Associados</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
